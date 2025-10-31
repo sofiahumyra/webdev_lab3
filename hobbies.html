@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hobbies | SHATZ's Website</title>
+    <style>
+        .hobbies-section {
+            margin-top: 40px;
+        }
+
+        .hobbies-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .hobby-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .hobby-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #733da8;
+        }
+
+        .hobby-card h3 {
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .hobby-card p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .side_bar, .body_area {
+                flex-basis: 100%;
+            }
+
+            .navigation {
+                gap: 20px;
+            }
+
+            .navigation a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .hobbies-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo">SHATZ'S PORTFOLIO</div>
+
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="campus.html">Campus Life</a>
+        </div>
+
+        <div class="header">
+            <h1>Hobbies</h1>
+            <p>My Hobbies</p>
+        </div>
+            <div class="body_area">         
+                <div id="hobbies" class="hobbies-section">
+                    <h2>My Hobbies</h2>
+                    <div class="hobbies-container">
+                        <div class="hobby-card">
+                            <div class="hobby-icon">🍰</div>
+                            <h3>Baking</h3>
+                            <p> I love creating delicious treats like brownies, cookies, and pastries. Baking helps me relax and express my creativity.</p>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon">😴</div>
+                            <h3>Sleeping</h3>
+                            <p>A good night's sleep is essential for my well-being. I prioritize rest to stay energized and focused.</p>
+                        </div>
+                        <div class="hobby-card">
+                                    <div class="hobby-icon">🍕</div>
+                                    <h3>Eating</h3>
+                                    <p>I love exploring different cuisines and flavors. Trying new foods is always an exciting adventure for me.</p>
+                                </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon">🎵</div>
+                            <h3>Music</h3>
+                            <p>Listening to music is my daily routine. I enjoy various genres and sometimes play the keyboard for fun.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; Sofia 2025 | All Rights Reserved  | Lab 3 Web Development
+        </div>
+   
+    </div>
+</body>
+</html>

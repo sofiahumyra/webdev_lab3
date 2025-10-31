@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biodata | SHATZ's Website</title>
+    <style>
+        /* Biodata specific styles */
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        img.profile {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
+            border: 3px solid #c99de0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f4f0f7;
+            color: #4c2c50;
+            width: 25%;
+            font-weight: 600;
+        }
+
+        td ul {
+            margin-left: 20px;
+        }
+
+        td a {
+            color: #733da8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        td a:hover {
+            color: #4c2c50;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .side_bar, .body_area {
+                flex-basis: 100%;
+            }
+
+            .navigation {
+                gap: 20px;
+            }
+
+            .navigation a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .hobbies-container {
+                grid-template-columns: 1fr;
+            }
+
+            th, td {
+                display: block;
+                width: 100%;
+                padding: 10px;
+            }
+
+            th {
+                background-color: #f4f0f7;
+                border-bottom: none;
+            }
+
+            td {
+                border-top: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo">SHATZ'S PORTFOLIO</div>
+
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="campus.html">Campus Life</a>
+        </div>
+
+        <div class="header">
+            <h1>About Me</h1>
+            <p>My Biodata</p>
+        </div>
+
+        <div class="content">
+            <div class="side_bar">
+                <h2>Quick Info</h2>
+                <p>Hi! I'm Sofia Humaira', a passionate Software Engineering student at UTHM.</p>
+                
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>C</li>
+                    <li>MySQL</li>
+                </ul>
+
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>Email: sofiaahumairaa24@gmail.com</li>
+                    <li>Phone: +60 10-450 6787</li>
+                    <li>Location: Batu Pahat, Johor</li>
+                </ul>
+            </div>
+
+            <div class="body_area">
+                <h2>Profile Information</h2>
+                
+                <div class="profile-container">
+                    <img src="profile.jpg" alt="Profile Picture" class="profile">
+                </div>
+                
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td colspan="2">Sofia Humaira' Binti Ahmad Taufik</td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth</th>
+                        <td colspan="2">24 May 2003</td>
+                    </tr>
+                    <tr>
+                        <th>Religion</th>
+                        <td colspan="2">Islam</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="4">Address</th>
+                        <td>Street</td>
+                        <td>Jalan JP3</td>
+                    </tr>
+                    <tr>
+                        <td>Town</td>
+                        <td>Taman Jenderam Permai</td>
+                    </tr>
+                    <tr>
+                        <td>District</td>
+                        <td>Dengkil</td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td>Selangor</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Contact</th>
+                        <td>Mobile Phone</td>
+                        <td>010-4506787</td>
+                    </tr>
+                    <tr>
+                        <td>Social Media</td>
+                        <td>sofiahumyra_</td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td><a href="https://github.com/sofiahumyra">GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <th>Course and Institution</th>
+                        <td colspan="2">Bachelor of Computer Science (Software Engineering) with Honours — UTHM</td>
+                    </tr>
+                    <tr>
+                        <th>Programming Skills</th>
+                        <td colspan="2">
+                            <ul>
+                                <li>HTML</li>
+                                <li>PHP</li>
+                                <li>JavaScript</li>
+                                <li>C</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Hobbies</th>
+                        <td colspan="2">Baking, Sleeping, Listening to Music, Eating</td>
+                    </tr>
+                    <tr>
+                        <th>2025 Wishlist</th>
+                        <td colspan="2">
+                            <ul>
+                                <li>Make my parents proud of me</li>
+                                <li>Complete PSM 1 successfully</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; Sofia 2025 | All Rights Reserved | Lab 3 Web Development
+        </div>
+
+    </div>
+</body>
+</html>
